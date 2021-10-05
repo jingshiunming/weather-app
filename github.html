@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="weather-app/github.css">
+    <title>Weather App Prototype</title>
+  </head>
+    <body>
+    <div class="container">
+      <div class="card" style="width:60rem;">
+  <div class="card-body">
+    <div class="row g-3 align-items-center">
+      <div  class="col-auto enter-city">
+        <form id="search-form">
+        <input type="text" id="enter-a-city" placeholder="Enter a City" />
+        <button type="submit" class="btn btn-primary" class="button" >Search</button>
+        <BR></BR>
+        <div class="col 3">
+        <button class="btn btn-success" id ="current-location-button">
+          CURRENT LOCATION
+        </button>
+        </div>
+      </form>
+      </div>
+      <div class="col-auto">
+    </div>
+    <div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Searching a city...</h1>
+      <h2>Currently <strong><span id="temperature">?</span><span class="units"> <a href="#" id="celsius-link">°C</a></span> |<span id="fahrenheit"><a href="#" id="fahrenheit-link">°F</a></span></strong></h2>
+      <h3>21°C / <strong>35°C</strong></h3>
+      <br>
+      <ul>
+        <li>
+          Humidity: <span id="humidity">0</span>%
+        </li>
+        <li>
+        Wind: <span id="wind"> 0</span> km/h
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <i class="fas fa-sun sunny-icon"></i>
+    </div>
+    <div class="col">
+      <p id="date">DATE</p>
+      <p id="time">TIME</p>
+      <p id="description">Calm</p>
+    </div>
+  </div>
+  <br />
+<div class="container">
+  <div class="row row-cols-5 each-day">
+    <div class="col">MON</div>
+    <div class="col">TUE</div>
+    <div class="col">WED</div>
+    <div class="col">THU</div>
+    <div class="col">FRI</div>
+  </div>
+</div>
+<div class="container">
+<div class="row row-cols-5 weather-emoji">
+  <div class="col"><i class="fas fa-sun"></i></div>
+  <div class="col"><i class="fas fa-cloud-sun"></i></div>
+  <div class="col"><i class="fas fa-cloud-sun-rain"></i></div>
+  <div class="col"><i class="fas fa-cloud-showers-heavy"></i></div>
+  <div class="col"><i class="fas fa-poo-storm"></i></div>
+</div>
+</div>
+   <br/>
+   <br />
+   <p>Favorite Cities</p>
+   <div class="container">
+  <div class="row row-cols-3 favorite-city">
+    <div class="col"><button type="button" class="btn btn-outline-primary">FLORENCE</button></div>
+    <div class="col"><button type="button" class="btn btn-outline-primary">BANGKOK</button></div>
+    <div class="col"><button type="button" class="btn btn-outline-primary">BARCELONA</button></div>
+  </div>
+</div>
+<br/>
+<br/>
+    </div>
+  </body>
+  <script src="https://kit.fontawesome.com/b4727b194a.js" crossorigin="anonymous"></script>
+  <script src="weather-app/github.js"></script>
+</html>
